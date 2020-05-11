@@ -4,7 +4,7 @@ namespace Cultro;
 
 use Illuminate\Support\ServiceProvider;
 
-class MlsgCultroServiceProvider extends ServiceProvider
+class CultroServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.

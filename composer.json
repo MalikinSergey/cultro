@@ -1,17 +1,33 @@
 {
-  "name": "mlsg/cultro",
-  "description": "",
-  "minimum-stability": "stable",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Malykhin Sergey",
-      "email": "malikin.sergey.1988@gmail.com"
-    }
-  ],
-  "require": {
-    "laravel/framework": "^7",
-    "laravelcollective/html": "^6",
-    "nesbot/carbon": "^2.16"
-  }
+    "name": "mlsg/cultro",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Malykhin Sergey",
+            "email": "malikin.sergey.1988@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^7",
+        "laravelcollective/html": "^6",
+        "nesbot/carbon": "^2.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cultro\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Cultro\\CultroServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
