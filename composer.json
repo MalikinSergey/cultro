@@ -1,0 +1,17 @@
+{
+  "name": "mlsg/cultro",
+  "description": "",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Malykhin Sergey",
+      "email": "malikin.sergey.1988@gmail.com"
+    }
+  ],
+  "require": {
+    "laravel/framework": "^7",
+    "laravelcollective/html": "^6",
+    "nesbot/carbon": "^2.16"
+  }
+}
