@@ -67,7 +67,7 @@ class EntityImageService
      */
     protected function prepareImage($path, EntityTypeField $field)
     {
-        $image = Image::load($path)->useImageDriver('imagick');
+        $image = Image::load($path)->useImageDriver('gd');
         
         $image->fit(Manipulations::FIT_CROP, $field->getWidth(), $field->getHeight())
               ->format($field->getFormat());
